@@ -1,0 +1,281 @@
+h1,h2,h3,h4,h5,h6,p,ul,li,a,ol{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/* header section  css start */
+.header-section{
+  padding: 80px 0;
+}
+
+.text h1{
+font-size: 80px;
+font-style: normal;
+font-weight: bold; 
+}
+
+.text p{
+  font-size: 20px; 
+  margin: 30px 0;
+  }
+
+  .text a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background:linear-gradient(-270deg ,#FF8536,#FF0502);
+    text-transform: capitalize;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+  }
+
+.tea-element img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+
+  .text a:hover {
+    color: #000;
+    text-shadow: 1px 9px 9px #000;
+  }
+
+  .text a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 58px;
+    width: 66px;
+    background:linear-gradient(270deg ,#2f2a7c,#916261);
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    z-index: -111;
+    transition: 1s;
+  }
+
+  .text a:hover:after{
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+    transition: 1s;
+    border-radius:5px ;
+    box-shadow: 10px 10px 10px #000;
+  }
+
+  .tea-element img {
+    position: relative;
+  }
+
+  .text a img {
+    transform: rotate(167deg);
+    height: 20px;
+    width: 22px;
+  }
+
+  .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+    width: 218px;
+    background: #fff;
+    box-shadow: 1px 4px 25px #0000002e;
+    padding: 10px;
+    border-radius: 6px;
+    position: absolute;
+    top: 55%;
+    transform: translate(56%,30%);
+  }
+
+  .star img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+
+ .cntnt h6{
+    font-size: 15px;
+    font-weight: 800;
+    color: #000;
+  }
+/* header sectiont css end */
+
+/* feature section css start */
+.feature-section {
+  padding: 80px 0;
+}
+
+.feature-heading {
+  text-align: center;
+}
+
+.feature-heading h2 {
+  font-size: 45px;
+  font-weight: 800;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.feature-heading p {
+	font-size: 25px;
+	font-weight: 500;
+	color: #000;
+	margin: 40px 0;
+}
+
+.tea-item {
+  text-align: center;
+  background: #F8F8F8;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.tea-item h5 {
+  font-size: 25px;
+  color: #000;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.tea-item img:hover{
+  transform: scale(1.09);
+  transition: 0.1s;
+}
+/* feature section css end */
+
+/* great tea section css start */
+.great-tea-section {
+  padding: 80px 0;
+}
+
+.little-glass {
+height: 136px;
+border-radius: 10px;
+background: #FFEAE7;
+}
+
+.big-glass {
+  background: #EEF1EB;
+  text-align: center;
+  margin-top: 20px;
+ overflow: hidden;
+ position: relative;
+ transition: 1s;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.big-glass-02 {
+  background: #FCF6E9;
+  text-align: center;
+ overflow: hidden;
+ position: relative;
+ transition: 1s;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.big-glass img,.big-glass-02 img {
+  transition: 1s;
+  position: relative;
+  z-index: 9999999;
+}
+
+.big-glass img:hover,.big-glass-02 img:hover{
+  transform: scale(1.5);
+}
+
+.big-glass::after,.big-glass-02::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: #FF0502;
+  bottom: 0;
+  transition: 1s;
+  height: 10px;
+  width: 100%;
+  z-index: 88;
+  clip-path: polygon(34% 61%, 67% 69%, 100% 53%, 98% 86%, 70% 100%, 30% 88%, 0 100%, 0 75%);
+}
+
+.big-glass:hover:after,.big-glass-02:hover:after{
+  height: 100px;
+  width: 100%;
+}
+.great-tea-section .row {
+  --bs-gutter-x:80px;
+}
+
+.great-text h3{
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.great-text p{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.great-text h4{
+  font-size: 20px;
+  font-weight: 800;
+}
+/* great tea section css end */
+
+/* super client section css start */
+.super-client-section {
+  background: linear-gradient(270deg, #FF0000 0%, #FF8938 100%);
+  padding: 88px 0;
+  position: relative;
+}
+
+.client-content h2 {
+  font-size: 45px;
+  margin: 20px 0;
+  font-weight: 800;
+  color: #fff;
+}
+
+.client-content p {
+  font-size: 16px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.client-content button {
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(270deg, #FF0000 0%, #FF8938 100%);
+  padding: 10px;
+  color: #fff;
+  position: relative;
+  z-index: 9;
+}
+
+.client-content button:hover {
+  background: linear-gradient(-270deg, #FF0000 0%, #FF8938 100%);
+ transition: 1ms;
+}
+
+
+
+.background-img{
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: translate(17%,25%);
+}
+/* super client section css end */
+
+
